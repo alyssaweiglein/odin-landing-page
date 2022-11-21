@@ -8,32 +8,50 @@
   <title>Document</title>
 </head>
 <body>
-  <nav class="navbar">
-    <li><a href="#section-1" id="logo">logo</a></li>
-    <ul class="nav-links">
-      <li><a href="#section-1">one</a></li>
-      <li><a href="#section-2">two</a></li>
-      <li><a href="#section-3">three</a></li>
-      <li><a href="#section-4">four</a></li>
-    </ul>
-  </nav>
+  <div class="topnav">
+    <a href="#section-1" id="logo">logo</a>
+    <div class="topnav-right">
+      <a href="#section-2">One</a>
+      <a href="#section-3">Two</a>
+      <a href="#section-4">Three</a>
+    </div>
+  </div>
 
   <div id="section-1">
     <div class="section-contents">
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-        Quaerat exercitationem quisquam ex magni, aut fugiat vitae 
-        ducimus atque molestiae porro eum laudantium voluptate, 
-        nisi nam rem odio eaque fugit accusamus!</p>
+      <div style="display: flex; align-items: stretch;">
+        <div style="color: white; width: 60%; margin: 10px;">
+          <h2>Company Name</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quae rem nobis voluptatem repellat inventore magnam perferendis! Labore, 
+          cupiditate explicabo.</p><br>
+          <button>Sign Up</button>
+        </div>
+        <div style="color: white; width: 40%;margin: 10px;">
+          <img src="https://cdna.artstation.com/p/assets/covers/images/022/382/358/large/kelly-kryspin-day-02.jpg?1575243736" style="width: 100%; border-radius: 10px;">
+        </div>
+      </div>
     </div>
   </div>
   <div id="section-2">
     <div class="section-contents">
       <h1>Our Team</h1>
       <div class="card-container">
-        <div class="card">one</div>
-        <div class="card">two</div>
-        <div class="card">three</div>
-        <div class="card">four</div>
+        <div class="card">
+          <img src="https://i.kym-cdn.com/photos/images/original/002/073/344/eb8.jpg" />
+          <p style="text-align: center;">Person 1<br>Title</p>
+        </div>
+        <div class="card">
+          <img src="https://i.etsystatic.com/11679855/c/600/478/0/61/il/fffb62/2445848674/il_500x500.2445848674_dzn4.jpg" />
+          <p style="text-align: center;">Person 2<br>Title</p>
+        </div>
+        <div class="card">
+          <img src="https://animalfactguide.com/wp-content/uploads/2013/10/ostrich2.jpg" />
+          <p style="text-align: center;">Person 3<br>Title</p>
+        </div>
+        <div class="card">
+          <img src="https://meralee727.files.wordpress.com/2018/01/img_0037-e1517185837548.jpg" />
+          <p style="text-align: center;">Person 4<br>Title</p>
+        </div>
       </div>
     </div>
   </div>
@@ -48,7 +66,12 @@
   <div id="section-4">
     <div class="section-contents">
       <div class="sign-up">
-        <button>Sign up</button>
+        <div id="sign-up-left">
+          <h4>Call to action!</h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reiciendis natus officia non cupiditate ipsa, aspernatur alias veritatis vitae commodi.
+        </div>
+        <div id="sign-up-right">
+          <button>Sign up</button>
+        </div>
       </div>
     </div>
   </div>
